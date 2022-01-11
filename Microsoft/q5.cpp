@@ -9,10 +9,8 @@ class Solution
     {
         vector<int>ans;
         stack<int>st;
-        ans.push_back(1);
-        st.push(0);
         
-        for(int i=1; i<n; ++i)
+        for(int i=0; i<n; ++i)
         {
             int temp = 1;
             while(!st.empty() && p[i] >= p[st.top()])
